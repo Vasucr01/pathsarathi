@@ -11,7 +11,7 @@ body {
   line-height: 1.6;
 }
 
-/* NAVBAR */
+/* Navbar */
 header {
   background: #7A5432;
   padding: 18px 8%;
@@ -20,7 +20,7 @@ header {
 nav { display: flex; justify-content: space-between; align-items: center; }
 nav h1 { color: #F6E8D9; font-weight: 600; font-size: 1.7rem; }
 nav h1 span { color: #D9A566; }
-nav ul { display: flex; gap: 18px; list-style: none; }
+nav ul { display: flex; gap: 18px; }
 nav ul li a {
   color: #F6E8D9;
   text-decoration: none;
@@ -33,36 +33,35 @@ nav ul li a:hover {
   border-bottom: 2px solid #D9A566;
 }
 
-/* HERO */
+/* Hero */
 .hero {
   background: url('images/BG.jpg') center/cover no-repeat;
-  min-height: 92vh;
+  min-height: 90vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   position: relative;
 }
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(55, 38, 23, 0.45);
-  backdrop-filter: blur(2px);
+  background: rgba(50, 35, 20, 0.45);
 }
 .hero-content {
   position: relative;
-  padding: 45px;
-  max-width: 720px;
+  max-width: 750px;
+  padding: 40px;
   text-align: center;
   border-radius: 16px;
-  background: rgba(255,240,220,0.15);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+  background: rgba(255,240,220,0.13);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.35);
 }
-.hero h2 { color: #F6E8D9; font-size: 2.6rem; margin-bottom: 12px; }
-.shloka { font-size: 1.3rem; font-style: italic; margin-bottom: 12px; }
+.hero h2 { color: #F6E8D9; font-size: 2.5rem; margin-bottom: 12px; }
 
-/* Buttons */
+/* Button */
 .btn {
+  display: inline-block;
   background: linear-gradient(135deg, #D9A566, #B98452);
   color: #2B1B12;
   padding: 12px 32px;
@@ -70,19 +69,19 @@ nav ul li a:hover {
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s;
-  display: inline-block;
+  margin-top: 18px;
 }
 .btn:hover { background: #8B5E3C; color: #F6E8D9; }
 
-/* SECTIONS */
+/* Sections */
 section { padding: 80px 10%; text-align: center; }
 .about, .mission { background: #F5E6D3; }
 
-/* MENTORS */
+/* Mentors */
 .team { background: #FAF4ED; }
 .mentors { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; }
 .card {
-  background: #fff; padding: 22px; width: 250px;
+  background: white; width: 250px; padding: 22px;
   border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.12);
   transition: 0.3s;
 }
@@ -92,37 +91,28 @@ section { padding: 80px 10%; text-align: center; }
   margin-bottom: 12px;
 }
 
-/* FORM */
+/* Contact */
 #contact iframe {
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.07);
 }
-
-/* WHATSAPP */
 .whatsapp { background: #25D366; color: white; margin-top: 25px; }
 .whatsapp:hover { background: #128C7E; }
 
-/* FOOTER */
+/* Footer */
 footer {
   background: #2B1B12; color: #F6E8D9;
-  text-align: center; padding: 14px 0;
+  padding: 15px 0; text-align: center;
 }
 
-/* RESPONSIVE FIXED */
-@media (max-width: 1024px) {
-  .hero h2 { font-size: 2.2rem; }
-}
+/* Responsive */
 @media (max-width: 768px) {
   nav { flex-direction: column; gap: 12px; }
-  .hero { height: auto; padding: 80px 25px; }
-  .hero-content { padding: 22px; max-width: 90%; }
-  .hero h2 { font-size: 1.9rem; }
+  .hero { padding: 70px 25px; height: auto; }
+  .hero-content { padding: 25px; max-width: 90%; }
+  .hero h2 { font-size: 2rem; }
   .btn, .whatsapp { width: 100%; }
   .mentors { flex-direction: column; }
-  .card { width: 92%; }
-}
-@media (max-width: 480px) {
-  .hero h2 { font-size: 1.6rem; }
-  .shloka { font-size: 1rem; }
-  section { padding: 50px 6%; }
+  .card { width: 90%; }
+  #contact iframe { height: 540px; }
 }
