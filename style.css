@@ -34,11 +34,15 @@ nav ul li a:hover { color: #2e1065; }
 
 /* Hero Section */
 .hero {
-  background: url('https://i.imgur.com/YUwrFfi.png') no-repeat center/cover;
-  color: white; height: 90vh;
-  display: flex; align-items: center; justify-content: center; text-align: center;
-  background-attachment: fixed;
+  background: url('images/krishna-bg.jpg') no-repeat center center/cover;
+  color: white;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
 .hero-content {
   background: rgba(0,0,0,0.6); padding: 40px; border-radius: 15px;
 }
@@ -85,3 +89,4 @@ footer {
   color: white; text-align: center;
   padding: 15px 0; font-size: 0.9rem;
 }
+
