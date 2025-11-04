@@ -41,11 +41,16 @@ nav ul li a:hover { color: #2e1065; }
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-attachment: scroll; /* <--- scrolling allowed */
 }
 
 .hero-content {
-  background: rgba(0,0,0,0.6); padding: 40px; border-radius: 15px;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(3px);
 }
+
 .hero h2 { font-size: 2.5rem; margin-bottom: 15px; }
 
 .btn {
@@ -89,5 +94,6 @@ footer {
   color: white; text-align: center;
   padding: 15px 0; font-size: 0.9rem;
 }
+
 
 
