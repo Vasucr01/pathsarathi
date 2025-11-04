@@ -6,14 +6,14 @@
 }
 
 body {
-  background: #fefdf9;
-  color: #333;
+  background: #FAF4ED; /* Soft cream background */
+  color: #2B1B12; /* Deep warm brown text */
   line-height: 1.6;
 }
 
 /* Navbar */
 header {
-  background: linear-gradient(90deg, #ffb300, #f36c21);
+  background: #8B5E3C; /* Warm brown */
   padding: 15px 8%;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -24,13 +24,18 @@ nav {
   justify-content: space-between;
 }
 
-nav h1 { color: white; font-weight: 600; }
-nav h1 span { color: #2e1065; }
+nav h1 { color: #F5E6D3; font-weight: 600; }
+nav h1 span { color: #D4A373; }
+
 nav ul { display: flex; list-style: none; }
 nav ul li a {
-  color: white; text-decoration: none; margin: 0 15px; font-weight: 500; transition: 0.3s;
+  color: #F5E6D3;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: 0.3s;
 }
-nav ul li a:hover { color: #2e1065; }
+nav ul li a:hover { color: #D4A373; }
 
 /* Hero Section */
 .hero {
@@ -41,7 +46,7 @@ nav ul li a:hover { color: #2e1065; }
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-attachment: scroll; /* <--- scrolling allowed */
+  background-attachment: scroll;
 }
 
 .hero-content {
@@ -53,47 +58,144 @@ nav ul li a:hover { color: #2e1065; }
 
 .hero h2 { font-size: 2.5rem; margin-bottom: 15px; }
 
+/* Button */
 .btn {
-  display: inline-block; margin-top: 20px; background: #ffb300; color: white;
-  padding: 12px 25px; border-radius: 30px; text-decoration: none; transition: 0.3s;
+  display: inline-block;
+  margin-top: 20px;
+  background: #D4A373;
+  color: #2B1B12;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
 }
-.btn:hover { background: #f36c21; }
+.btn:hover { background: #8B5E3C; color: #F5E6D3; }
 
 /* Sections */
 section { padding: 80px 10%; text-align: center; }
-.about, .mission { background: #fff6e5; }
-.team { background: #f7f7f7; }
+.about, .mission { background: #F5E6D3; }
+.team { background: #FAF4ED; }
 
-.team .mentors { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; margin-top: 40px; }
+/* Mentors */
+.team .mentors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
 .card {
-  background: white; border-radius: 15px; padding: 20px; width: 250px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: 0.3s;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
 }
 .card:hover { transform: translateY(-5px); }
-.card img { width: 100%; border-radius: 50%; }
 
-/* ✅ GOOGLE FORM STYLE */
+.card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+/* Google Form */
 #contact iframe {
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.07);
   background: white;
 }
 
-/* ✅ WHATSAPP BUTTON STYLE */
+/* WhatsApp Button */
 .whatsapp {
   background: #25D366;
   margin-top: 25px;
+  color: white;
 }
-.whatsapp:hover {
-  background: #128C7E;
-}
+.whatsapp:hover { background: #128C7E; }
 
 /* Footer */
 footer {
-  background: #2e1065;
-  color: white; text-align: center;
-  padding: 15px 0; font-size: 0.9rem;
+  background: #2B1B12;
+  color: #F5E6D3;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
 }
 
+/* -------- RESPONSIVE DESIGN -------- */
 
+/* Tablets */
+@media (max-width: 992px) {
+  section { padding: 60px 7%; }
 
+  .hero h2 {
+    font-size: 2.1rem;
+  }
+
+  .card { width: 280px; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    margin: 5px 10px;
+    font-size: 0.95rem;
+  }
+
+  .hero {
+    height: auto;
+    padding: 70px 20px;
+  }
+
+  .hero-content { padding: 25px; }
+
+  .hero h2 {
+    font-size: 1.9rem;
+    line-height: 1.3;
+  }
+
+  .btn, .whatsapp {
+    width: 100%;
+    text-align: center;
+  }
+
+  .team .mentors {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card { width: 90%; }
+
+  #contact iframe {
+    width: 100%;
+    height: 520px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  nav h1 { font-size: 1.4rem; }
+
+  .hero h2 { font-size: 1.6rem; }
+
+  section { padding: 50px 6%; }
+
+  .hero-content { padding: 20px; }
+}
