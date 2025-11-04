@@ -7,9 +7,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
-
-// Simple form action
-document.querySelector('form').addEventListener('submit', e => {
-  e.preventDefault();
-  alert('Thank you! Your message has been sent to PathSarathi.');
-});
