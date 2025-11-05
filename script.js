@@ -20,11 +20,11 @@ const mentorData = {
 };
 
 function openModal(key) {
-  const data = mentorData[key];
-  document.getElementById('mentor-img').src = data.img;
-  document.getElementById('mentor-name').innerText = data.name;
-  document.getElementById('mentor-role').innerText = data.role;
-  document.getElementById('mentor-bio').innerText = data.bio;
+  const m = mentorData[key];
+  document.getElementById('mentor-img').src = m.img;
+  document.getElementById('mentor-name').innerText = m.name;
+  document.getElementById('mentor-role').innerText = m.role;
+  document.getElementById('mentor-bio').innerText = m.bio;
   document.getElementById('mentorModal').style.display = "flex";
 }
 
