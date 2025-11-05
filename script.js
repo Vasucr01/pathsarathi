@@ -16,6 +16,12 @@ const mentorData = {
     name: "Jayvina Dhedhi",
     role: "IT Mentor",
     bio: "Supports students in technical growth, interview preparation, and real IT skill building."
+  },
+  jayvina: {
+    img: "images/SHIV.jpeg",
+    name: "SHIV HANSALIYA",
+    role: "Travel Mentor",
+    bio: "guids you to prepare your amazing travel experince."
   }
 };
 
@@ -35,3 +41,4 @@ function closeModal() {
 window.onclick = function(e) {
   if (e.target == document.getElementById('mentorModal')) closeModal();
 }
+
