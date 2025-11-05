@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentors | PathSarathi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h1>Path<span>Sarathi</span></h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="mentors.html" class="active">Mentors</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="team">
+  <h2>Our Mentors</h2>
+  <p>Guiding you with real experience and clarity.</p>
+
+  <div class="mentors">
+
+    <div class="card" onclick="openModal('vasu')">
+      <img src="images/vasu.jpg" alt="">
+      <h3>Vasu Chauhan</h3>
+      <p>Project Expert</p>
+    </div>
+
+    <div class="card" onclick="openModal('nitya')">
+      <img src="images/nitya.jpeg" alt="">
+      <h3>Nitya Bhambhani</h3>
+      <p>Career Strategist</p>
+    </div>
+
+    <div class="card" onclick="openModal('jayvina')">
+      <img src="images/jayvina.JPG" alt="">
+      <h3>Jayvina Dhedhi</h3>
+      <p>IT Mentor</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="mentorModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <img id="mentor-img" src="" alt="">
+    <h2 id="mentor-name"></h2>
+    <p id="mentor-role"></p>
+    <p id="mentor-bio"></p>
+
+    <a id="mentor-whatsapp" class="btn whatsapp" target="_blank">Message on WhatsApp</a>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 PathSarathi | Inspired by the wisdom of Gita</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
