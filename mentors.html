@@ -15,7 +15,7 @@
     <h1>Path<span>Sarathi</span></h1>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="mentors.html" class="active">Mentors</a></li>
+      <li><a class="active" href="mentors.html">Mentors</a></li>
       <li><a href="index.html#contact">Contact</a></li>
     </ul>
   </nav>
@@ -28,19 +28,19 @@
   <div class="mentors">
 
     <div class="card" onclick="openModal('vasu')">
-      <img src="images/vasu.jpg" alt="">
+      <img src="images/vasu.jpg">
       <h3>Vasu Chauhan</h3>
       <p>Project Expert</p>
     </div>
 
     <div class="card" onclick="openModal('nitya')">
-      <img src="images/nitya.jpeg" alt="">
+      <img src="images/nitya.jpeg">
       <h3>Nitya Bhambhani</h3>
       <p>Career Strategist</p>
     </div>
 
     <div class="card" onclick="openModal('jayvina')">
-      <img src="images/jayvina.JPG" alt="">
+      <img src="images/jayvina.JPG">
       <h3>Jayvina Dhedhi</h3>
       <p>IT Mentor</p>
     </div>
@@ -48,16 +48,16 @@
   </div>
 </section>
 
-<!-- Mentor Modal -->
+<!-- Modal -->
 <div id="mentorModal" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
 
-    <img id="mentor-img" src="" alt="">
+    <img id="mentor-img">
     <h2 id="mentor-name"></h2>
-    <p id="mentor-role"></p>
-    <p id="mentor-bio"></p>
-
+    <p id="mentor-role" class="role-text"></p>
+    <hr class="divider">
+    <p id="mentor-bio" class="bio-text"></p>
   </div>
 </div>
 
