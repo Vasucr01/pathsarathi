@@ -17,7 +17,7 @@ const mentorData = {
     role: "IT Mentor",
     bio: "Supports students in technical growth, interview preparation, and real IT skill building."
   },
-  jayvina: {
+  SHIV: {
     img: "images/SHIV.jpeg",
     name: "SHIV HANSALIYA",
     role: "Travel Mentor",
@@ -41,4 +41,5 @@ function closeModal() {
 window.onclick = function(e) {
   if (e.target == document.getElementById('mentorModal')) closeModal();
 }
+
 
