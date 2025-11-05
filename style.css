@@ -233,3 +233,17 @@ footer {
   .hero h2 { font-size: 1.6rem; }
   section { padding: 50px 6%; }
 }
+
+/* WHATSAPP BUTTON (Home Page Only) */
+.contact .whatsapp {
+  background: #25D366;
+  color: white;
+  display: inline-block;
+  margin-top: 25px;
+}
+
+.contact .whatsapp:hover {
+  background: #128C7E;
+  color: #ffffff;
+}
+
