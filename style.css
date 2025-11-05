@@ -113,7 +113,8 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 35px;
+  padding-top: 25px;
 }
 .card {
   width: 250px;
@@ -123,6 +124,7 @@ section {
   box-shadow: 0 4px 12px rgba(0,0,0,0.12);
   transition: 0.3s;
   cursor: pointer;
+  text-align: center;
 }
 .card:hover {
   transform: translateY(-6px);
@@ -141,15 +143,6 @@ section {
   box-shadow: 0 4px 20px rgba(0,0,0,0.07);
 }
 
-/* WHATSAPP */
-.whatsapp {
-  background: #25D366 !important;
-  color: white !important;
-}
-.whatsapp:hover {
-  background: #128C7E !important;
-}
-
 /* FOOTER */
 footer {
   background: #2B1B12;
@@ -158,7 +151,7 @@ footer {
   padding: 14px 0;
 }
 
-/* ------------------ MODAL ------------------ */
+/* -------- MODAL ---------- */
 .modal {
   display: none;
   position: fixed;
@@ -172,29 +165,50 @@ footer {
 
 .modal-content {
   background: #FAF4ED;
-  padding: 30px;
+  padding: 35px;
   width: 90%;
   max-width: 420px;
   border-radius: 15px;
   text-align: center;
   box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  max-height: 85vh;
+  overflow-y: auto;
 }
 
 .modal-content img {
-  width: 140px;
-  height: 140px;
+  width: 145px;
+  height: 145px;
   border-radius: 50%;
+  border: 3px solid #D9A566;
   object-fit: cover;
   margin-bottom: 12px;
 }
 
 .modal-content h2 {
-  margin-bottom: 6px;
   color: #7A5432;
+  margin-bottom: 6px;
 }
-.modal-content p {
-  margin-bottom: 12px;
+
+.role-text {
+  font-size: 1rem;
+  color: #8B5E3C;
+  margin-bottom: 10px;
 }
+
+.divider {
+  border: none;
+  border-top: 2px solid #D9A566;
+  width: 60%;
+  margin: 10px auto;
+}
+
+.bio-text {
+  color: #3B2A1D;
+  font-size: 1rem;
+  line-height: 1.55;
+  padding-top: 8px;
+}
+
 .close {
   font-size: 26px;
   cursor: pointer;
@@ -203,13 +217,13 @@ footer {
   color: #7A5432;
 }
 
-/* -------------- RESPONSIVE -------------- */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   nav { flex-direction: column; gap: 12px; }
-  .hero { padding: 70px 25px; height: auto; }
+  .hero { padding: 70px 25px; min-height: auto; }
   .hero-content { max-width: 90%; padding: 25px; }
   .hero h2 { font-size: 2rem; }
-  .btn, .whatsapp { width: 100%; }
+  .btn { width: 100%; }
   .mentors { flex-direction: column; }
   .card { width: 92%; }
   #contact iframe { height: 540px; }
