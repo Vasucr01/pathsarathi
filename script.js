@@ -22,6 +22,13 @@ const mentorData = {
     name: "SHIV HANSALIYA",
     role: "Travel Mentor",
     bio: "guids you to prepare your amazing travel experince."
+  },
+  
+  hasti: {
+    img: "images/hasti.jpeg",
+    name: "HASTI HIRAPARA",
+    role: "Drawing & Painting Artist",
+    bio: "passionate visual artist specializing in traditional sketching, modern acrylic painting, and theme-based artwork."
   }
 
 
@@ -45,6 +52,7 @@ function closeModal() {
 window.onclick = function(e) {
   if (e.target == document.getElementById('mentorModal')) closeModal();
 }
+
 
 
 
