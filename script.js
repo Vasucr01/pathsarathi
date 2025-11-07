@@ -27,12 +27,7 @@ const mentorData = {
     bio: "Helps you plan memorable, budget-friendly and fulfilling travel experiences with practical insights and real destination knowledge."
   },
 
-  hasti: {
-    img: "images/hasti.jpeg",
-    name: "Hasti Hirpara",
-    role: "Drawing & Painting Artist",
-    bio: "A passionate visual artist specializing in traditional sketching, modern acrylic painting and creative theme-based artwork. Hasti helps individuals express their creativity and develop real art skills through guided practice and creative learning."
-  }
+
 };
 
 function openModal(key) {
@@ -51,4 +46,5 @@ function closeModal() {
 window.onclick = function(e) {
   if (e.target == document.getElementById('mentorModal')) closeModal();
 }
+
 
