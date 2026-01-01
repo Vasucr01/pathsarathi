@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mentors | PathSarathi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -58,28 +59,36 @@
 
   </div>
 
-  <!-- ✅ Bottom CTA (SAFE VERSION) -->
-  <div class="become-mentor-cta fade" id="mentorCTA">
+  <!-- 🔽 Bottom CTA -->
+  <div class="become-mentor-cta fade-in" id="mentorCTA">
     <h3>Have experience and want to guide others?</h3>
     <p>Become a Sarathi for someone’s journey.</p>
-    <a href="become-mentor.html" class="btn">Become a Mentor</a>
+    <a href="become-mentor.html" class="btn mentor-btn">Become a Mentor</a>
   </div>
 
 </section>
 
-<!-- MODAL -->
+<!-- Mentor Modal -->
 <div id="mentorModal" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
     <img id="mentor-img">
     <h2 id="mentor-name"></h2>
-    <p id="mentor-role"></p>
-    <p id="mentor-bio"></p>
+    <p id="mentor-role" class="role-text"></p>
+    <hr class="divider">
+    <p id="mentor-bio" class="bio-text"></p>
   </div>
 </div>
 
+<!-- 📱 Sticky Mobile CTA -->
+<div class="sticky-mentor">
+  <a href="become-mentor.html" class="btn mentor-btn">
+    Become a Mentor
+  </a>
+</div>
+
 <footer>
-  <p>© 2025 PathSarathi</p>
+  <p>© 2025 PathSarathi | Inspired by the wisdom of Gita</p>
 </footer>
 
 <script src="script.js"></script>
