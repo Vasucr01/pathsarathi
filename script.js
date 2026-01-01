@@ -3,31 +3,31 @@ const mentorData = {
     img: "images/vasu.jpg",
     name: "Vasu Chauhan",
     role: "Project Expert",
-    bio: "Helps students build real-world projects."
+    bio: "Helps students build and complete real-world projects."
   },
   nitya: {
     img: "images/nitya.jpeg",
     name: "Nitya Bhambhani",
     role: "Career Strategist",
-    bio: "Guides people to choose the right direction."
+    bio: "Guides people to choose the right career path."
   },
   jayvina: {
     img: "images/jayvina.JPG",
     name: "Jayvina Dhedhi",
     role: "IT Mentor",
-    bio: "Supports technical growth."
+    bio: "Supports technical growth and interviews."
   },
   shiv: {
     img: "images/SHIV.jpeg",
     name: "Shiv Hansaliya",
     role: "Travel Mentor",
-    bio: "Guides meaningful travel."
+    bio: "Guides meaningful travel experiences."
   },
   hasti: {
     img: "images/hasti.jpeg",
     name: "Hasti Hirpara",
     role: "Drawing & Painting Artist",
-    bio: "Guides creativity through art."
+    bio: "Passionate visual artist in drawing and painting."
   }
 };
 
