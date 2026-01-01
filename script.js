@@ -3,42 +3,40 @@ const mentorData = {
     img: "images/vasu.jpg",
     name: "Vasu Chauhan",
     role: "Project Expert",
-    bio: "Helps students build and complete real-world projects."
+    bio: "Helps students build real-world projects."
   },
   nitya: {
     img: "images/nitya.jpeg",
     name: "Nitya Bhambhani",
     role: "Career Strategist",
-    bio: "Guides people to choose the right career path."
+    bio: "Guides people to choose the right direction."
   },
   jayvina: {
     img: "images/jayvina.JPG",
     name: "Jayvina Dhedhi",
     role: "IT Mentor",
-    bio: "Supports technical learning and interview preparation."
+    bio: "Supports technical growth."
   },
   shiv: {
     img: "images/SHIV.jpeg",
     name: "Shiv Hansaliya",
     role: "Travel Mentor",
-    bio: "Helps plan meaningful travel experiences."
+    bio: "Guides meaningful travel."
   },
   hasti: {
     img: "images/hasti.jpeg",
     name: "Hasti Hirpara",
     role: "Drawing & Painting Artist",
-    bio: "Passionate artist guiding creativity through art."
+    bio: "Guides creativity through art."
   }
 };
 
 function openModal(key) {
   const m = mentorData[key];
-
   document.getElementById("mentor-img").src = m.img;
   document.getElementById("mentor-name").innerText = m.name;
   document.getElementById("mentor-role").innerText = m.role;
   document.getElementById("mentor-bio").innerText = m.bio;
-
   document.getElementById("mentorModal").style.display = "flex";
 }
 
