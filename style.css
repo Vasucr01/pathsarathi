@@ -1,4 +1,4 @@
-/* Bottom Become Mentor CTA */
+/* Bottom CTA */
 .become-mentor-cta {
   margin-top: 60px;
   padding: 40px 20px;
@@ -7,50 +7,18 @@
   text-align: center;
 }
 
-.become-mentor-cta h3 {
-  font-size: 1.6rem;
-  color: #7A5432;
-  margin-bottom: 10px;
-}
-
-.become-mentor-cta p {
-  color: #3B2A1D;
-  margin-bottom: 20px;
-}
-
-/* Fade-in Animation */
-.fade-in {
+/* Fade (SAFE) */
+.fade {
   opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease;
+  transform: translateY(20px);
+  transition: 0.6s ease;
 }
-.fade-in.show {
+.fade.show {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Sticky Mentor CTA (Mobile Only) */
-.sticky-mentor {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .sticky-mentor {
-    display: block;
-    position: fixed;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 420px;
-    z-index: 999;
-    text-align: center;
-  }
-
-  .sticky-mentor a {
-    width: 100%;
-    display: block;
-    padding: 14px;
-    font-size: 1.05rem;
-  }
+/* Modal safety */
+.modal {
+  z-index: 1000;
 }
