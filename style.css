@@ -120,14 +120,18 @@ section {
   align-items: center;
 }
 
-.modal-content {
-  background: #FAF4ED;
-  padding: 30px;
-  border-radius: 15px;
-  text-align: center;
-  width: 90%;
-  max-width: 420px;
+.modal-content img {
+  width: 120px;        /* 👈 controlled size */
+  height: 120px;
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 50%;
+  border: 3px solid #D9A566;
+  object-fit: cover;
+  margin: 10px auto 14px;
+  display: block;
 }
+
 
 .close {
   float: right;
@@ -142,3 +146,4 @@ footer {
   text-align: center;
   padding: 15px;
 }
+
