@@ -268,3 +268,144 @@ footer {
   }
 }
 
+/* ============================= */
+/* GLOBAL RESPONSIVE IMPROVEMENTS */
+/* ============================= */
+
+/* Prevent horizontal scroll everywhere */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Smooth scaling text */
+body {
+  font-size: clamp(15px, 1.2vw, 17px);
+}
+
+/* ============================= */
+/* HERO SECTION AUTO FIT */
+/* ============================= */
+
+.hero {
+  padding: 40px 20px;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 720px;
+}
+
+/* ============================= */
+/* MENTOR CARDS AUTO GRID */
+/* ============================= */
+
+.mentors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  padding: 20px 0;
+}
+
+.card {
+  width: 100%;
+  max-width: 260px;
+  margin: auto;
+}
+
+/* ============================= */
+/* MODAL AUTO ADJUST */
+/* ============================= */
+
+#mentorModal .modal-content {
+  width: min(92%, 420px);
+}
+
+/* Prevent modal content overflow */
+#mentorModal .bio-text {
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+/* ============================= */
+/* CONTACT FORM RESPONSIVE */
+/* ============================= */
+
+#contact iframe {
+  width: 100%;
+  max-width: 720px;
+  margin: auto;
+  display: block;
+}
+
+/* ============================= */
+/* TABLET ADJUSTMENTS */
+/* ============================= */
+
+@media (max-width: 992px) {
+  section {
+    padding: 60px 8%;
+  }
+
+  .hero-content {
+    padding: 30px;
+  }
+}
+
+/* ============================= */
+/* MOBILE PERFECT FIT */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h2 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .hero-content {
+    padding: 24px 20px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  section {
+    padding: 50px 6%;
+  }
+
+  #mentorModal .modal-content {
+    padding: 24px 20px;
+  }
+
+  #mentorModal .bio-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* ============================= */
+/* SMALL PHONES */
+/* ============================= */
+
+@media (max-width: 400px) {
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+
