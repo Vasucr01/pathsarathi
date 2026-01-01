@@ -1,19 +1,22 @@
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
+/* ================= BODY ================= */
 body {
-  background: #FAF4ED;
+  background-color: #FAF4ED;
   color: #2B1B12;
+  line-height: 1.6;
 }
 
-/* NAVBAR */
+/* ================= HEADER / NAV ================= */
 header {
-  background: #7A5432;
-  padding: 15px 8%;
+  background-color: #7A5432;
+  padding: 16px 8%;
 }
 
 nav {
@@ -24,84 +27,119 @@ nav {
 
 nav h1 {
   color: #F5E6D3;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
+
 nav h1 span {
   color: #D4A373;
 }
 
 nav ul {
-  display: flex;
   list-style: none;
-  gap: 20px;
+  display: flex;
+  gap: 22px;
 }
 
-nav a {
-  color: #F5E6D3;
+nav ul li a {
   text-decoration: none;
+  color: #F5E6D3;
+  font-weight: 500;
 }
-nav a.active,
-nav a:hover {
+
+nav ul li a:hover,
+nav ul li a.active {
   color: #D4A373;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero {
-  background: url("images/BG.jpg") center/cover no-repeat;
-  height: 90vh;
+  background: url("images/BG.jpg") no-repeat center center/cover;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 40px;
 }
 
 .hero-content {
-  background: rgba(0,0,0,0.55);
-  color: white;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
   padding: 40px;
-  border-radius: 15px;
+  border-radius: 16px;
   text-align: center;
+  max-width: 700px;
 }
 
-/* SECTIONS */
+.hero-content h2 {
+  font-size: 2.3rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.05rem;
+}
+
+/* ================= SECTIONS ================= */
 section {
   padding: 70px 10%;
   text-align: center;
 }
 
-.about, .mission {
-  background: #F5E6D3;
+.about,
+.mission {
+  background-color: #F5E6D3;
 }
 
-/* BUTTON */
+.about h2,
+.mission h2,
+.team h2,
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #7A5432;
+}
+
+.about p,
+.mission p,
+.team p,
+.contact p {
+  max-width: 750px;
+  margin: auto;
+}
+
+/* ================= BUTTON ================= */
 .btn {
   display: inline-block;
-  margin-top: 15px;
-  background: #D4A373;
+  margin-top: 18px;
+  padding: 12px 32px;
+  background-color: #D4A373;
   color: #2B1B12;
-  padding: 12px 30px;
-  border-radius: 25px;
   text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
 }
 
 .btn:hover {
-  background: #7A5432;
+  background-color: #7A5432;
   color: #F5E6D3;
 }
 
-/* MENTORS */
+/* ================= MENTORS ================= */
 .mentors {
+  margin-top: 45px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
-  margin-top: 40px;
 }
 
 .card {
-  background: white;
-  width: 230px;
+  background: #fff;
+  width: 240px;
   padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   cursor: pointer;
 }
 
@@ -113,15 +151,46 @@ section {
   margin-bottom: 10px;
 }
 
-/* CTA */
-.become-mentor-cta {
-  margin-top: 60px;
-  padding: 40px;
-  background: #F5E6D3;
-  border-radius: 15px;
+.card h3 {
+  color: #7A5432;
+  margin-bottom: 5px;
 }
 
-/* MODAL */
+.card p {
+  color: #555;
+}
+
+/* ================= BECOME MENTOR CTA ================= */
+.become-mentor-cta {
+  margin-top: 60px;
+  background: #F5E6D3;
+  padding: 40px;
+  border-radius: 16px;
+}
+
+/* ================= CONTACT ================= */
+.contact-form {
+  max-width: 450px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+/* ================= MODAL ================= */
 .modal {
   display: none;
   position: fixed;
@@ -129,25 +198,52 @@ section {
   background: rgba(0,0,0,0.6);
   justify-content: center;
   align-items: center;
+  z-index: 999;
 }
 
 .modal-content {
   background: #FAF4ED;
   padding: 30px;
-  border-radius: 15px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 400px;
   text-align: center;
 }
 
+.modal-content img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
 .close {
-  cursor: pointer;
   font-size: 24px;
+  cursor: pointer;
   float: right;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 footer {
   background: #2B1B12;
   color: #F5E6D3;
   text-align: center;
   padding: 15px;
+  font-size: 0.9rem;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  section {
+    padding: 55px 7%;
+  }
 }
