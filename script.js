@@ -3,31 +3,31 @@ const mentorData = {
     img: "images/vasu.jpg",
     name: "Vasu Chauhan",
     role: "Project Expert",
-    bio: "Helps students plan, build, and complete real-world projects with clarity and confidence."
+    bio: "Helps students build and complete real-world projects."
   },
   nitya: {
     img: "images/nitya.jpeg",
     name: "Nitya Bhambhani",
     role: "Career Strategist",
-    bio: "Guides individuals to discover the right career path based on strengths, interests, and goals."
+    bio: "Guides people to choose the right career path."
   },
   jayvina: {
     img: "images/jayvina.JPG",
     name: "Jayvina Dhedhi",
     role: "IT Mentor",
-    bio: "Supports technical growth, interview preparation, and practical IT skill development."
+    bio: "Supports technical learning and interview preparation."
   },
   shiv: {
     img: "images/SHIV.jpeg",
     name: "Shiv Hansaliya",
     role: "Travel Mentor",
-    bio: "Helps people plan meaningful, budget-friendly, and memorable travel experiences."
+    bio: "Helps plan meaningful travel experiences."
   },
   hasti: {
     img: "images/hasti.jpeg",
     name: "Hasti Hirpara",
     role: "Drawing & Painting Artist",
-    bio: "A passionate visual artist guiding creativity through sketching, painting, and artistic expression."
+    bio: "Passionate artist guiding creativity through art."
   }
 };
 
@@ -45,9 +45,3 @@ function openModal(key) {
 function closeModal() {
   document.getElementById("mentorModal").style.display = "none";
 }
-
-window.onclick = function (e) {
-  if (e.target === document.getElementById("mentorModal")) {
-    closeModal();
-  }
-};
