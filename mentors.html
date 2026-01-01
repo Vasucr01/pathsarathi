@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Mentors | PathSarathi</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
     <h1>Path<span>Sarathi</span></h1>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="mentors.html" class="active">Mentors</a></li>
+      <li><a class="active" href="mentors.html">Mentors</a></li>
     </ul>
   </nav>
 </header>
@@ -25,32 +25,32 @@
 
   <div class="mentors">
 
-    <div class="card">
-      <img src="images/vasu.jpg" />
+    <div class="card" onclick="openModal('vasu')">
+      <img src="images/vasu.jpg">
       <h3>Vasu Chauhan</h3>
       <p>Project Expert</p>
     </div>
 
-    <div class="card">
-      <img src="images/nitya.jpeg" />
+    <div class="card" onclick="openModal('nitya')">
+      <img src="images/nitya.jpeg">
       <h3>Nitya Bhambhani</h3>
       <p>Career Strategist</p>
     </div>
 
-    <div class="card">
-      <img src="images/jayvina.JPG" />
+    <div class="card" onclick="openModal('jayvina')">
+      <img src="images/jayvina.JPG">
       <h3>Jayvina Dhedhi</h3>
       <p>IT Mentor</p>
     </div>
 
-    <div class="card">
-      <img src="images/SHIV.jpeg" />
+    <div class="card" onclick="openModal('shiv')">
+      <img src="images/SHIV.jpeg">
       <h3>Shiv Hansaliya</h3>
       <p>Travel Mentor</p>
     </div>
 
-    <div class="card">
-      <img src="images/hasti.jpeg" />
+    <div class="card" onclick="openModal('hasti')">
+      <img src="images/hasti.jpeg">
       <h3>Hasti Hirpara</h3>
       <p>Drawing & Painting Artist</p>
     </div>
@@ -58,9 +58,20 @@
   </div>
 </section>
 
+<div id="mentorModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+    <img id="mentor-img">
+    <h2 id="mentor-name"></h2>
+    <p id="mentor-role"></p>
+    <p id="mentor-bio"></p>
+  </div>
+</div>
+
 <footer>
   <p>© 2025 PathSarathi</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
