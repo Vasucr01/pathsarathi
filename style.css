@@ -147,3 +147,15 @@ footer {
   padding: 15px;
 }
 
+/* FORCE FIX FOR MODAL IMAGE SIZE */
+#mentorModal .modal-content img {
+  width: 110px !important;
+  height: 110px !important;
+  max-width: 110px !important;
+  max-height: 110px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  display: block !important;
+  margin: 10px auto 15px !important;
+}
+
