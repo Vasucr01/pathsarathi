@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mentors | PathSarathi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,29 +15,66 @@
     <h1>Path<span>Sarathi</span></h1>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a class="active" href="mentors.html">Mentors</a></li>
-      <li><a href="become-mentor.html">Become Mentor</a></li>
+      <li><a href="mentors.html" class="active">Mentors</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
     </ul>
   </nav>
 </header>
 
+<!-- MENTORS SECTION -->
 <section class="team">
   <h2>Our Mentors</h2>
-  <a href="become-mentor.html" class="btn mentor-btn">Become a Mentor</a>
+  <p>Guiding you with real experience and clarity.</p>
 
   <div class="mentors">
-    <div class="card" onclick="openModal('vasu')"><img src="images/vasu.jpg"><h3>Vasu Chauhan</h3><p>Project Expert</p></div>
-    <div class="card" onclick="openModal('nitya')"><img src="images/nitya.jpeg"><h3>Nitya Bhambhani</h3><p>Career Strategist</p></div>
-    <div class="card" onclick="openModal('jayvina')"><img src="images/jayvina.JPG"><h3>Jayvina Dhedhi</h3><p>IT Mentor</p></div>
-    <div class="card" onclick="openModal('shiv')"><img src="images/SHIV.jpeg"><h3>Shiv Hansaliya</h3><p>Travel Mentor</p></div>
-    <div class="card" onclick="openModal('hasti')"><img src="images/hasti.jpeg"><h3>Hasti Hirpara</h3><p>Art Mentor</p></div>
+
+    <div class="card" onclick="openModal('vasu')">
+      <img src="images/vasu.jpg" alt="Vasu Chauhan">
+      <h3>Vasu Chauhan</h3>
+      <p>Project Expert</p>
+    </div>
+
+    <div class="card" onclick="openModal('nitya')">
+      <img src="images/nitya.jpeg" alt="Nitya Bhambhani">
+      <h3>Nitya Bhambhani</h3>
+      <p>Career Strategist</p>
+    </div>
+
+    <div class="card" onclick="openModal('jayvina')">
+      <img src="images/jayvina.JPG" alt="Jayvina Dhedhi">
+      <h3>Jayvina Dhedhi</h3>
+      <p>IT Mentor</p>
+    </div>
+
+    <div class="card" onclick="openModal('shiv')">
+      <img src="images/SHIV.jpeg" alt="Shiv Hansaliya">
+      <h3>Shiv Hansaliya</h3>
+      <p>Travel Mentor</p>
+    </div>
+
+    <div class="card" onclick="openModal('hasti')">
+      <img src="images/hasti.jpeg" alt="Hasti Hirpara">
+      <h3>Hasti Hirpara</h3>
+      <p>Drawing & Painting Artist</p>
+    </div>
+
   </div>
+
+  <!-- ✅ BOTTOM CTA -->
+  <div class="become-mentor-cta">
+    <h3>Have experience and want to guide others?</h3>
+    <p>Become a Sarathi for someone’s journey.</p>
+    <a href="become-mentor.html" class="btn mentor-btn">Become a Mentor</a>
+  </div>
+
 </section>
 
+<!-- MENTOR MODAL -->
 <div id="mentorModal" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
-    <img id="mentor-img">
+
+    <img id="mentor-img" alt="Mentor Image">
     <h2 id="mentor-name"></h2>
     <p id="mentor-role" class="role-text"></p>
     <hr class="divider">
@@ -44,7 +82,12 @@
   </div>
 </div>
 
-<footer><p>© 2025 PathSarathi</p></footer>
+<footer>
+  <p>© 2025 PathSarathi | Inspired by the wisdom of Gita</p>
+</footer>
+
 <script src="script.js"></script>
 </body>
 </html>
+
+
