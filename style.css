@@ -1,56 +1,140 @@
-/* Bottom Become Mentor CTA */
-.become-mentor-cta {
-  margin-top: 60px;
-  padding: 40px 20px;
-  background: #F5E6D3;
-  border-radius: 16px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #FAF4ED;
+  color: #2B1B12;
+}
+
+/* NAVBAR */
+header {
+  background: #7A5432;
+  padding: 18px 8%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  color: #F6E8D9;
+  font-size: 1.7rem;
+}
+nav h1 span {
+  color: #D9A566;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #F6E8D9;
+  text-decoration: none;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  color: #D9A566;
+}
+
+/* MENTORS */
+.team {
+  padding: 80px 10%;
   text-align: center;
 }
 
-.become-mentor-cta h3 {
-  font-size: 1.6rem;
-  color: #7A5432;
+.mentors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.card {
+  width: 240px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
   margin-bottom: 10px;
 }
 
-.become-mentor-cta p {
-  color: #3B2A1D;
-  margin-bottom: 20px;
+.card h3 {
+  color: #7A5432;
 }
 
-/* Fade-in Animation */
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease;
-}
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
+.card p {
+  color: #555;
 }
 
-/* Sticky Mentor CTA (Mobile Only) */
-.sticky-mentor {
+/* CTA */
+.become-mentor-cta {
+  margin-top: 60px;
+  padding: 40px;
+  background: #F5E6D3;
+  border-radius: 15px;
+}
+
+.btn {
+  background: #D9A566;
+  color: #2B1B12;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background: #7A5432;
+  color: #F6E8D9;
+}
+
+/* MODAL */
+.modal {
   display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
 }
 
-@media (max-width: 768px) {
-  .sticky-mentor {
-    display: block;
-    position: fixed;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 420px;
-    z-index: 999;
-    text-align: center;
-  }
+.modal-content {
+  background: #FAF4ED;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 15px;
+  text-align: center;
+}
 
-  .sticky-mentor a {
-    width: 100%;
-    display: block;
-    padding: 14px;
-    font-size: 1.05rem;
-  }
+.modal-content img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
 }
