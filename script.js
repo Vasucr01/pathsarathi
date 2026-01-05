@@ -5,17 +5,7 @@ const mentorData = {
     role: "Project Expert",
     bio: "Helps students build and complete real-world projects."
   },
-  nitya: {
-    img: "images/nitya.jpeg",
-    name: "Nitya Bhambhani",
-    role: "Career Strategist",
-    bio: "Guides people to choose the right career path."
-  },
-  jayvina: {
-    img: "images/jayvina.JPG",
-    name: "Jayvina Dhedhi",
-    role: "IT Mentor",
-    bio: "Supports technical growth and interviews."
+
   },
   shiv: {
     img: "images/SHIV.jpeg",
@@ -23,12 +13,7 @@ const mentorData = {
     role: "Travel Mentor",
     bio: "Guides meaningful travel experiences."
   },
-  hasti: {
-    img: "images/hasti.jpeg",
-    name: "Hasti Hirpara",
-    role: "Drawing & Painting Artist",
-    bio: "Passionate visual artist in drawing and painting."
-  }
+
 };
 
 function openModal(key) {
@@ -43,3 +28,4 @@ function openModal(key) {
 function closeModal() {
   document.getElementById("mentorModal").style.display = "none";
 }
+
