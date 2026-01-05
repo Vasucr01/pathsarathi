@@ -477,3 +477,27 @@ body {
   color: #2B1B12;
 }
 
+/* ===== WHATSAPP FLOATING BUTTON ===== */
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  background: #25D366;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  z-index: 9999;
+  transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background: #128C7E;
+  transform: translateY(-3px);
+}
+
+
