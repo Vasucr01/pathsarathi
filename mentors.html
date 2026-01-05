@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mentors | PathSarathi</title>
+  <title>PathSarathi | Our Mentors</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,54 +17,67 @@
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a class="active" href="mentors.html">Mentors</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
     </ul>
   </nav>
 </header>
 
 <section class="team">
   <h2>Our Mentors</h2>
-  <p>Real people. Real guidance.</p>
+  <p>Click on a mentor to know more about them</p>
 
   <div class="mentors">
 
     <div class="card" onclick="openModal('vasu')">
-      <img src="images/vasu.jpg">
+      <img src="images/vasu.jpg" alt="Vasu Chauhan">
       <h3>Vasu Chauhan</h3>
       <p>Project Expert</p>
     </div>
 
+    <div class="card" onclick="openModal('nitya')">
+      <img src="images/nitya.jpeg" alt="Nitya Bhambhani">
+      <h3>Nitya Bhambhani</h3>
+      <p>Career Strategist</p>
+    </div>
 
-
-
+    <div class="card" onclick="openModal('jayvina')">
+      <img src="images/jayvina.JPG" alt="Jayvina Dhedhi">
+      <h3>Jayvina Dhedhi</h3>
+      <p>IT Mentor</p>
+    </div>
 
     <div class="card" onclick="openModal('shiv')">
-      <img src="images/SHIV.jpeg">
+      <img src="images/SHIV.jpeg" alt="Shiv Hansaliya">
       <h3>Shiv Hansaliya</h3>
       <p>Travel Mentor</p>
     </div>
 
-
+    <div class="card" onclick="openModal('hasti')">
+      <img src="images/hasti.jpeg" alt="Hasti Hirpara">
+      <h3>Hasti Hirpara</h3>
+      <p>Drawing & Painting Artist</p>
+    </div>
 
   </div>
 </section>
 
-<!-- MODAL -->
-<div id="mentorModal" class="modal">
+<footer>
+  <p>© 2025 PathSarathi | Guiding with Experience</p>
+</footer>
+
+<!-- ===== MODAL ===== -->
+<div class="modal" id="mentorModal">
   <div class="modal-content">
     <span class="close" onclick="closeModal()">×</span>
-    <img id="mentor-img">
+
+    <img id="mentor-img" src="">
     <h2 id="mentor-name"></h2>
-    <p id="mentor-role" class="role-text"></p>
+    <p class="role-text" id="mentor-role"></p>
     <hr class="divider">
-    <p id="mentor-bio" class="bio-text"></p>
+    <p class="bio-text" id="mentor-bio"></p>
   </div>
 </div>
 
-<footer>
-  <p>© 2025 PathSarathi</p>
-</footer>
-
-<script src="script.js"></script>
+<script src="mentor.js"></script>
 </body>
 </html>
-
