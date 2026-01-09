@@ -25,10 +25,10 @@ const mentorData = {
   },
 
   zaheen: {
-    img: "images/SHIV.jpeg",
+    img: "images/zheen.jpg",
     name: "zaheen vora",
-    role: "Travel Mentor",
-    bio: "Guides meaningful travel experiences."
+    role: "CS MENTOR",
+    bio: "INSPIRE PEOPLE TO CREATE TECH FOR GOOD"
  
 };
 
@@ -46,4 +46,5 @@ function openModal(key) {
 function closeModal() {
   document.getElementById("mentorModal").style.display = "none";
 }
+
 
