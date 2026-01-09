@@ -23,8 +23,16 @@ const mentorData = {
     role: "Travel Mentor",
     bio: "Guides meaningful travel experiences."
   },
+
+  zaheen: {
+    img: "images/SHIV.jpeg",
+    name: "zaheen vora",
+    role: "Travel Mentor",
+    bio: "Guides meaningful travel experiences."
  
 };
+
+
 
 function openModal(key) {
   const m = mentorData[key];
@@ -38,3 +46,4 @@ function openModal(key) {
 function closeModal() {
   document.getElementById("mentorModal").style.display = "none";
 }
+
